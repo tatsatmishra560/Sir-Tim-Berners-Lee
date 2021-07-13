@@ -1,89 +1,38 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>School Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kwitter</title>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="style.css">
-
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="kwitter.js"></script>
 </head>
 
 <body>
-
-    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Tatsat Mishra</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="#ahlconinternationalschool">AHLCON INTERNATIONAL SCHOOL</a></li>
-                <li><a href="#campuslife">CAMPUS LIFE</a></li>
-                <li><a href="#achievments">ACHIEVMENTS</a></li>
-                <li><a href="#whatsnew">WHAT'S NEW</a></li>
-                <li><a href="#alumni">ALUMNI</a></li>
-                <li><a href="#contactus">CONTACT US</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
-
-    <div class="container">
-        <div class="page-header" id="headlines">
-            <marquee width="40%" direction="up" height="30%">Ranked 7 in Delhi (Co-Ed Day School), 2'nd in India (Technology Avant-Garde School), by Education World-2019-20.</marquee>
-        </div>
-        <section id="videos">
-            <h1>Videos</h1>
-            <div class="line"></div>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/tUxajYjJgsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/gHz8fwz0WnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/oXlHgd63WFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
-
-
-
-
-
-
-
-
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
-
-
-            <div class="contact_1">
-
-                <a href="mailto:my@gmail.com?Subject=Hi">
-                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
-                </a>
-
-                <a href="#">
-                    <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
-                </a>
-            </div>
-        </section>
-
-
-    </div>
-    </body>
+	<center>
+		<h1 class="header">
+			Chat App <sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img src="logo.png" class="logo">
+			<h3>See what is happening in the world right now</h3>
+			<h4>Join Kwitter today</h4>
+			<div class="form-group">
+				<label>User Name:</label>
+				<input type="text" id="user_name" class="form-control" placeholder="User Name">
+			</div>
+			<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+			<br><br>
+		</div>
+	</center>
+</body>
 
 </html>
